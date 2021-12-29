@@ -63,9 +63,11 @@
         transition: ease-out 0.5s;
         cursor: pointer;
         color: white;
+        box-shadow: 10px 10px 20px 20px rgba(79, 83, 255, 0.18);
     }
     .container .btn-discord:hover {
     background: #121212;
+    box-shadow: 2px 2px 8px 4px rgba(238, 32, 32, 0.16);
     }
     .container .btn-github {
         background: #171717;
@@ -77,15 +79,17 @@
         transition: ease-out 0.5s;
         cursor: pointer;
         color: white;
+        box-shadow: 10px 10px 20px 20px rgba(23, 23, 23, 0.22);
     }
     .container .btn-github:hover {
         background: #121212;
+        box-shadow: 2px 2px 8px 4px rgba(0, 255, 110, 0.16);
     }
 </style>
 <script>
     function discord1() {
         var name = prompt('Something error')
-        if(name == null || name == "") {
+        if(name == null || name == '') {
             txt = 'error'
         } else {
             window.open('https://discord.com/api/oauth2/authorize?client_id=922807795064135701&redirect_uri=https%3A%2F%2Fdiscord.com&response_type=code&scope=identify', 'MsgWindow', 'width=500, height=900')
