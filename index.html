@@ -4,43 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://c.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif">
-  <title>stop bro</title>
-  <meta property="og:site_name" content="https://lol.zrxy.ml">
-  <meta name="og:title" content="no">
-  <meta name="og:description" content="What is website simply ??">
-  <meta name="og:image" content="https://c.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif">
-  <meta name="theme-color" content="#7289DA">
+    <title>Guys</title>
+    <meta property="og:site_name" content="this website">
+    <meta name="og:title" content="bro">
+    <meta name="og:description" content="Simply button website?">
+    <meta name="og:image" content="https://cdn.discordapp.com/attachments/924146518758424607/925664780230996018/des.PNG">
+    <meta name="theme-color" content="#7289DA">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="what simply website??">
+    <meta property="og:description" content="i am kid">
+    <meta property="og:url" content="https://lol.zrxy.ml">
+    <meta property="og:site_name" content="zeor154.github.io/bro">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/924146518758424607/925664780230996018/des.PNG">
 </head>
 <body>
-   
+    <div class="container">
+ <p style='display: flex; justify-content: center; '>Welcome to simply website???</p>
+    <div class="btn-github"> 
+        <a onclick="github()">Github
+            <i class="fab fa-github" aria-hidden="true" ::before></i>
+            </a>
+    </div>
+
+    <div class="btn-discord"> 
+        <a onclick="discord1()">Discord
+            <i class="fab fa-discord" aria-hidden="true"></i>
+            </a>
+    </div>
+    </div>
 </body>
-<div id="tes">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<div class="test">
-    <a onclick="discord1()">Github</a>
-</div>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
     body {
         background: bisque;
-    } 
-    .test {
-        margin: 40px;
-        font-size: 30px;
-        text-align: center;
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        }
+        .container {
+            flex-direction: column;
+            background-color: #fff;
+            display: flex;
+            border-radius: 0.4rem;
+            padding: 1.4rem 2.4rem;
+            align-items: center;
+        }
+    .container p {
+        font-family: 'RoBoto';
+        font-size: 20px;
     }
-    #tes {
+    .container .btn-discord {
         margin-top: 100px;
-        text-align: center;
+        font-family: 'Roboto';
+        background: #4f53ff;
+        font-size: 15px;
+        padding: 1.1rem 1.4rem;
+        border-radius: 40px;
+        transition: ease-out 0.5s;
+        cursor: pointer;
+        color: white;
+    }
+    .container .btn-discord:hover {
+    background: #121212;
+    }
+    .container .btn-github {
+        background: #171717;
+        margin-top: 100px;
+        font-family: 'Roboto';
+        font-size: 15px;
+        padding: 1.1rem 1.4rem;
+        border-radius: 40px;
+        transition: ease-out 0.5s;
+        cursor: pointer;
+        color: white;
+    }
+    .container .btn-github:hover {
+        background: #121212;
     }
 </style>
 <script>
     function discord1() {
-        alert("https://github.com/Zeor154/bro this github")
+        var name = prompt('Something error')
+        if(name == null || name == "") {
+            txt = 'error'
+        } else {
+            window.open('https://discord.com/api/oauth2/authorize?client_id=922807795064135701&redirect_uri=https%3A%2F%2Fdiscord.com&response_type=code&scope=identify', 'MsgWindow', 'width=500, height=900')
+        } 
+        
     }
 </script>
+<script>
+    function github() {
+        var name = prompt('Something error')
+        if(name == null || name == "") {
+            txt = 'error'
+        } else {
+            window.open('https://github.com/Zeor154/', 'MsgWindow', 'width=500, height=900')
+        } 
+        
+    }
+</script>
+<script>alert('Welcome to website')</script>
+<script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
 </html>
