@@ -17,28 +17,37 @@
     <meta property="og:site_name" content="zeor154.github.io/bro">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/924146518758424607/925664780230996018/des.PNG">
 </head>
-<body>
+<>
     <nav class="menu-bar">
         <div class="group">
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"class="item title">Site</a>
         </div>
         <div class="group">
-          <a href="index"class="item">Home</a>
-          <a href="contact"class="item">Contact</a>
+          <a href="index.html"class="item">Home</a>
+          <a href="contact.html"class="item">Contact</a>
         </div>
       </nav>
     <div class="container">
-        <p class="txt">Error</p>
-<p class="footer">Copyright © 2021</p>
+        <p class="txt">My site</p>
+        <p class="footer">Copyright © 2021</p>
+    </div>
+    <div class="about">
+      <p class="about-txt">My About
+        <i class="fab fa-discord"></i>
+      </p>
+      <p class="about-des">Name : Pound pong</p>
+      <p class="about-des">Gender : Male</p>
+      <p class="about-des">What i like : Code....</p>
     </div>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    
+
     .container .txt{
-        font-family: 'RoBoto';
-        font-size: 30px;
-        color: #FF5A5A;
+        font-size: 25px;
+    }   
+    .container .about-txt{
+      font-size: 20px;
     }
     .menu-bar {
   background-color: #1988f7;
@@ -80,6 +89,24 @@
             margin-top: 70px;
             position: absolute;
             border: 2px solid orange;
+        }
+        .about {
+            flex-direction: column;
+            background-color: #fff;
+            display: flex;
+            border-radius: 0.4rem;
+            padding: 1.4rem 1.9rem;
+            align-items: center;
+            margin-top: 270px;
+            position: absolute;
+            border: 2px solid orange;
+        }
+        .about .about-txt{
+          font-size: 25px;
+          font-family: 'Dosis', sans-serif;
+        }
+        .about .about-des{
+          font-family: 'RoBoto';
         }
     .container p {
         font-family: 'RoBoto';
