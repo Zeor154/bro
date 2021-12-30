@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guys</title>
+    <meta property="og:site_name" content="this website">
+    <meta name="og:title" content="bro">
+    <meta name="og:description" content="Simply button website?">
+    <meta name="og:image" content="https://cdn.discordapp.com/attachments/924146518758424607/925664780230996018/des.PNG">
+    <meta name="theme-color" content="#7289DA">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="what simply website??">
+    <meta property="og:description" content="i am kid">
+    <meta property="og:url" content="https://lol.zrxy.ml">
+    <meta property="og:site_name" content="zeor154.github.io/bro">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/924146518758424607/925664780230996018/des.PNG">
+</head>
+<body>
+    <nav class="menu-bar">
+        <div class="group">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"class="item title">Site</a>
+        </div>
+        <div class="group">
+          <a href="index.html"class="item">Home</a>
+          <a href="contact.html"class="item">Contact</a>
+        </div>
+      </nav>
+    <div class="container">
+ <p style='display: flex; justify-content: center; '>Contact me demo</p>
+    <div class="btn-github"> 
+        <a onclick="github()">
+            <i class="fab fa-github" aria-hidden="true" ::before></i>
+            </a>
+    </div>
+
+    <div class="btn-discord"> 
+        <a onclick="discord1()">
+            <i class="fab fa-discord" aria-hidden="true"></i>
+            </a>
+    </div>
+<p class="footer">Copyright © 2021</p>
+    </div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    .menu-bar {
+  background-color: #1988f7;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.item {
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: 'RoBoto';
+}
+
+.item.title {
+  font-weight: 600;
+}
+
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+    body {
+        background-image: url('https://media.discordapp.net/attachments/924146518758424607/925664780230996018/des.PNG');
+        display: flex;
+        justify-content: center;
+        }
+        .container {
+            flex-direction: column;
+            background-color: #fff;
+            display: flex;
+            border-radius: 0.4rem;
+            padding: 1.4rem 1.9rem;
+            align-items: center;
+            margin-top: 70px;
+            position: absolute;
+            border: 2px solid orange;
+        }
+    .container p {
+        font-family: 'RoBoto';
+        font-size: 20px;
+    }
+    .container .btn-discord {
+        margin-top: 100px;
+        font-family: 'Roboto';
+        background: #4f53ff;
+        font-size: 15px;
+        padding: 1.1rem 1.4rem;
+        border-radius: 30px;
+        transition: ease-out 0.5s;
+        cursor: pointer;
+        color: white;
+        box-shadow: 10px 10px 20px 20px rgba(79, 83, 255, 0.18);
+        transform: translate(0px, -151px);
+        }
+    .container .btn-discord:hover {
+    background: #121212;
+    box-shadow: 2px 2px 8px 4px rgba(238, 32, 32, 0.16);
+    }
+    .container .btn-github {
+        background: #171717;
+        margin-top: 100px;
+        font-family: 'Roboto';
+        font-size: 15px;
+        padding: 1.1rem 1.4rem;
+        border-radius: 40px;
+        transition: ease-out 0.5s;
+        cursor: pointer;
+        color: white;
+        box-shadow: 10px 10px 20px 20px rgba(23, 23, 23, 0.22);
+        transform: translate(-5px, -83px);
+    }
+    .container .btn-github:hover {
+        background: #121212;
+        box-shadow: 2px 2px 8px 4px rgba(0, 255, 110, 0.16);
+    }
+    .container .footer{
+        text-align: right;
+        font-family: 'RoBoto';
+        font-size: 15px;
+    }
+</style>
+<script>
+    function discord1() {
+        var name = prompt('Something error')
+        if(name == null || name == '') {
+            txt = 'error'
+        } else {
+            window.open('https://discord.com/api/oauth2/authorize?client_id=922807795064135701&redirect_uri=https%3A%2F%2Fdiscord.com&response_type=code&scope=identify', 'MsgWindow', 'width=500, height=900')
+        } 
+        
+    }
+</script>
+<script>
+    function github() {
+        var name = prompt('Something error')
+        if(name == null || name == "") {
+            txt = 'error'
+        } else {
+            window.open('https://github.com/Zeor154/', 'MsgWindow', 'width=500, height=900')
+        } 
+        
+    }
+</script>
+<script>alert('Welcome to website')</script>
+<script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
+</html>
