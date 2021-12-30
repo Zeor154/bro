@@ -18,25 +18,53 @@
     <link rel="icon" href="https://cdn.discordapp.com/attachments/924146518758424607/925664780230996018/des.PNG">
 </head>
 <body>
+    <nav class="menu-bar">
+        <div class="group">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"class="item title">Site</a>
+        </div>
+        <div class="group">
+          <a href="index.html"class="item">Home</a>
+          <a href="contact.html"class="item">Contact</a>
+        </div>
+      </nav>
     <div class="container">
- <p style='display: flex; justify-content: center; '>Contact me demo</p>
-    <div class="btn-github"> 
-        <a onclick="github()">
-            <i class="fab fa-github" aria-hidden="true" ::before></i>
-            </a>
-    </div>
-
-    <div class="btn-discord"> 
-        <a onclick="discord1()">
-            <i class="fab fa-discord" aria-hidden="true"></i>
-            </a>
-    </div>
+        <p class="txt">Error</p>
 <p class="footer">Copyright © 2021</p>
     </div>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    
+    .container .txt{
+        font-family: 'RoBoto';
+        font-size: 30px;
+        color: #FF5A5A;
+    }
+    .menu-bar {
+  background-color: #1988f7;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
 
+.item {
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: 'RoBoto';
+}
+
+.item.title {
+  font-weight: 600;
+}
+
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
     body {
         background-image: url('https://media.discordapp.net/attachments/924146518758424607/925664780230996018/des.PNG');
         display: flex;
@@ -49,7 +77,7 @@
             border-radius: 0.4rem;
             padding: 1.4rem 1.9rem;
             align-items: center;
-            margin-top: 50px;
+            margin-top: 70px;
             position: absolute;
             border: 2px solid orange;
         }
@@ -97,28 +125,6 @@
         font-size: 15px;
     }
 </style>
-<script>
-    function discord1() {
-        var name = prompt('Something error')
-        if(name == null || name == '') {
-            txt = 'error'
-        } else {
-            window.open('https://discord.com/api/oauth2/authorize?client_id=922807795064135701&redirect_uri=https%3A%2F%2Fdiscord.com&response_type=code&scope=identify', 'MsgWindow', 'width=500, height=900')
-        } 
-        
-    }
-</script>
-<script>
-    function github() {
-        var name = prompt('Something error')
-        if(name == null || name == "") {
-            txt = 'error'
-        } else {
-            window.open('https://github.com/Zeor154/', 'MsgWindow', 'width=500, height=900')
-        } 
-        
-    }
-</script>
 <script>alert('Welcome to website')</script>
 <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
 </html>
