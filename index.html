@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="zeor154.github.io/bro">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/924146518758424607/925664780230996018/des.PNG">
 </head>
-   <nav class="menu-bar">
+    <nav class="menu-bar">
         <div class="group">
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"class="item title">Site</a>
         </div>
@@ -38,10 +38,41 @@
       <p class="about-des">Gender : Male</p>
       <p class="about-des">What i like : Code....</p>
     </div>
+    <div class="skill">
+      <p class="title">My Skills</p>
+      <p>Html : 12%</p>
+      <p>Css : 4%</p>
+      <p>Javascript : 2%</p>
+      <div class="num" data-val="12000">000</div>
+      <span>Counter</span>
+    </div>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+    
+    .skill .title{
+      font-size: 25px;
+    }
+    .skill .num{
+      font-size: 30px;
+      color: black;
+    }
+    .skill:hover{
+      transform: scale(1.3, 1.3);
+    }
+    .skill{
+      flex-direction: column;
+      background-color: #fff;
+            display: flex;
+            border-radius: 0.4rem;
+            padding: 1.4rem 1.9rem;
+            align-items: center;
+            margin-top: 570px;
+            position: absolute;
+            border: 2px solid green;
+            font-family: 'RoBoto';
+            transition: ease-in-out 0.3s;
+}
     .container .txt{
         font-size: 25px;
     }   
@@ -98,7 +129,7 @@
             align-items: center;
             margin-top: 270px;
             position: absolute;
-            border: 2px solid orange;
+            border: 2px solid pink;
         }
         .about .about-txt{
           font-size: 25px;
@@ -151,6 +182,23 @@
         font-size: 15px;
     }
 </style>
+<script>
+  let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue +=1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+</script>
 <script>alert('Welcome to website')</script>
 <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
 </html>
