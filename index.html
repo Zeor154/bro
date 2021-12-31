@@ -17,6 +17,9 @@
     <meta property="og:site_name" content="zeor154.github.io/bro">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/924146518758424607/925664780230996018/des.PNG">
 </head>
+  <div class="loading">
+   <p>Loading</p>
+   </div>
     <nav class="menu-bar">
         <div class="group">
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"class="item title">Site</a>
@@ -50,6 +53,11 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     
+    .loading{
+     font-family: 'RoBoto';
+     display: flex;
+     justify-content: center;
+    }
     .skill .title{
       font-size: 25px;
     }
@@ -138,49 +146,6 @@
         .about .about-des{
           font-family: 'RoBoto';
         }
-    .container p {
-        font-family: 'RoBoto';
-        font-size: 20px;
-    }
-    .container .btn-discord {
-        margin-top: 100px;
-        font-family: 'Roboto';
-        background: #4f53ff;
-        font-size: 15px;
-        padding: 1.1rem 1.4rem;
-        border-radius: 30px;
-        transition: ease-out 0.5s;
-        cursor: pointer;
-        color: white;
-        box-shadow: 10px 10px 20px 20px rgba(79, 83, 255, 0.18);
-        transform: translate(0px, -151px);
-        }
-    .container .btn-discord:hover {
-    background: #121212;
-    box-shadow: 2px 2px 8px 4px rgba(238, 32, 32, 0.16);
-    }
-    .container .btn-github {
-        background: #171717;
-        margin-top: 100px;
-        font-family: 'Roboto';
-        font-size: 15px;
-        padding: 1.1rem 1.4rem;
-        border-radius: 40px;
-        transition: ease-out 0.5s;
-        cursor: pointer;
-        color: white;
-        box-shadow: 10px 10px 20px 20px rgba(23, 23, 23, 0.22);
-        transform: translate(-5px, -83px);
-    }
-    .container .btn-github:hover {
-        background: #121212;
-        box-shadow: 2px 2px 8px 4px rgba(0, 255, 110, 0.16);
-    }
-    .container .footer{
-        text-align: right;
-        font-family: 'RoBoto';
-        font-size: 15px;
-    }
 </style>
 <script>
   let valueDisplays = document.querySelectorAll(".num");
@@ -198,6 +163,11 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
+</script>
+<script>
+  $(window).on('load',function(){
+   $('.loading').faceOut(1000);
+})
 </script>
 <script>alert('Welcome to website')</script>
 <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
